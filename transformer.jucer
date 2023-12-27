@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="tfeStn" name="transformer" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+  <MAINGROUP id="TqB8w3" name="transformer">
+    <GROUP id="{75F620D3-1D26-A7CD-DFBF-9A1744BE1285}" name="Source">
+      <FILE id="EYDmP0" name="reverb.cpp" compile="1" resource="0" file="Source/reverb.cpp"/>
+      <FILE id="tPdA5t" name="reverb.h" compile="0" resource="0" file="Source/reverb.h"/>
+      <FILE id="NuLn50" name="chorus.cpp" compile="1" resource="0" file="Source/chorus.cpp"/>
+      <FILE id="a6hBZ1" name="chorus.h" compile="0" resource="0" file="Source/chorus.h"/>
+      <FILE id="yRVp2m" name="signalsmith-fft.h" compile="0" resource="0"
+            file="Source/signalsmith-fft.h"/>
+      <FILE id="N72skQ" name="pitchshift.cpp" compile="1" resource="0" file="Source/pitchshift.cpp"/>
+      <FILE id="bn4jxQ" name="pitchshift.h" compile="0" resource="0" file="Source/pitchshift.h"/>
+      <FILE id="JbTook" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="FPGkzq" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="NfGdAK" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" externalLibraries="fftw3" extraLinkerFlags="-lfftw3">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="phaseVocoder" headerPath="/usr/local/include&#10;/usr/local/include/eigen3"
+                       libraryPath="/usr/local/lib&#10;/usr/local/include/eigen3"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="phaseVocoder" headerPath="/usr/local/include&#10;/usr/local/include/eigen3"
+                       libraryPath="/usr/local/lib&#10;/usr/local/include/eigen3"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../Documents/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../Documents/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
